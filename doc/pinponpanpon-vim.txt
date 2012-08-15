@@ -1,0 +1,9 @@
+*pinponpanpon-vim* Checking tool of weather warning announce.
+
+Version: 0.0.1
+Author:  grauwoelfchen <y.grauwoelfchen@gmail.com>
+License: BSD
+
+==============================================================================
+
+vim:tw=78:ts=8:ft=help:norl
