@@ -1,4 +1,4 @@
-*pinponpanpon-vim* Checking tool of the japanese weather warning announce.
+*pinponpanpon-vim.txt* Checking tool of the japanese weather warning announce.
 
 Version: 0.0.1
 Author:  grauwoelfchen <y.grauwoelfchen@gmail.com>
