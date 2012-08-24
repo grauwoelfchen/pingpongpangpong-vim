@@ -1,9 +1,63 @@
-*pinponpanpon-vim* Checking tool of weather warning announce.
+*pinponpanpon-vim* Checking tool of the japanese weather warning announce.
 
 Version: 0.0.1
 Author:  grauwoelfchen <y.grauwoelfchen@gmail.com>
 License: BSD
 
 ==============================================================================
+CONTENTS                                               *pinponpanpon-contents*
 
-vim:tw=78:ts=8:ft=help:norl
+Introduction ... |pinponpanpon-introduction|
+Interface ...... |pinponpanpon-interface|
+  Commands .....  |pinponpanpon-commands|
+  Variables ....  |pinponpanpon-functions|
+Changelog ...... |pinponpanpon-changelog|
+
+==============================================================================
+INTRODUCTION                                       *pinponpanpon-introduction*
+
+*pinponpanpon-vim* is a Vim plugin to check the japanese weather warning
+Announce by area. "pinponpanpon" is onomatopoeia of chime in japanese.
+
+Requirements:
+- webapi.vim
+- multibyte support of vim
+
+Latest version:
+http://github.com/grauwoelfchen/pinponpanpon-vim
+
+==============================================================================
+INTERFACE                                             *pinponpanpon-interface*
+
+------------------------------------------------------------------------------
+COMMANDS                                               *pinponpanpon-commands*
+
+:PinponPanpon [area]                                           *:PinponPanpon*
+        This command shows you contents of Weather warning announce in
+        japanese. If g:pinponpanpon_area_name is defined, then arguments area
+        is unneccessary.
+>
+        :PinponPanpon さいたま市
+<
+        Contents comes from website of Japan Meteorological Agency
+        (http://www.jma.go.jp/jp/warn/).
+
+------------------------------------------------------------------------------
+VARIABLES                                              *pinponpanpon-commands*
+
+g:pinponpanpon_area_name
+        You can set your primary area name in Japanese. (ex. "さいたま市")
+        This is optional.
+
+==============================================================================
+
+CHANGELOG *pinponpanpon-changelog*
+
+2012-08-24
+- Updated doc text.
+
+2012-08-15
+- Initial version.
+
+==============================================================================
+vim:tw=78:sw=4:ts=8:ft=help:norl:
