@@ -43,15 +43,14 @@ COMMANDS                                               *pinponpanpon-commands*
         (http://www.jma.go.jp/jp/warn/).
 
 ------------------------------------------------------------------------------
-VARIABLES                                              *pinponpanpon-commands*
+VARIABLES                                             *pinponpanpon-variables*
 
 g:pinponpanpon_area_name
         You can set your primary area name in Japanese. (ex. "さいたま市")
         This is optional.
 
 ==============================================================================
-
-CHANGELOG *pinponpanpon-changelog*
+CHANGELOG                                             *pinponpanpon-changelog*
 
 2012-08-24
 - Updated doc text.
