@@ -17,7 +17,17 @@ or set in .vimrc
 
 g:pinponpanpon_area_name = 'さいたま市'
 ```
-
 ## Source
 
-* [気象庁|気象警報・注意報](http://www.jma.go.jp/jp/warn/)
+* [Japan Meteorological Agency](http://www.jma.go.jp/jp/warn/)
+
+## Changelog
+
+Version 0.0.2
+
+* 2012-08-25
+  - Fixed parse error by broken Table.
+* 2012-08-24
+  - Updated doc text.
+* 2012-08-15
+  - Initial version.

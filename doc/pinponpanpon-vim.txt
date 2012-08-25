@@ -1,6 +1,6 @@
 *pinponpanpon-vim.txt* Checking tool of the japanese weather warning announce.
 
-Version: 0.0.1
+Version: 0.0.2
 Author:  grauwoelfchen <y.grauwoelfchen@gmail.com>
 License: BSD
 
@@ -51,6 +51,9 @@ g:pinponpanpon_area_name
 
 ==============================================================================
 CHANGELOG                                             *pinponpanpon-changelog*
+
+2012-08-25
+- Fixed parse error by broken Table.
 
 2012-08-24
 - Updated doc text.
