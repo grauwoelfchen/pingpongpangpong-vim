@@ -26,7 +26,7 @@ g:pinponpanpon_area_name = 'さいたま市'
 Version 0.0.2
 
 * 2012-08-25
-  - Fixed parse error by broken Table.
+  - Solved parse error caused by broken table.
 * 2012-08-24
   - Updated doc text.
 * 2012-08-15
