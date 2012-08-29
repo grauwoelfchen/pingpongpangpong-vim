@@ -23,11 +23,16 @@ g:pinponpanpon_area_name = 'さいたま市'
 
 ## Changelog
 
-Version 0.0.2
+Version 0.0.3
 
+```
+* 2012-08-29
+  - Improved window and buffer handling.
+  - Added indicator message (fetching/parsing).
 * 2012-08-25
   - Solved parse error caused by broken table.
 * 2012-08-24
   - Updated doc text.
 * 2012-08-15
   - Initial version.
+```
