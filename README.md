@@ -10,6 +10,8 @@ pinponpanpon ♪
 
 ## Usage
 
+see `doc/pinponpanpon-vim.txt`
+
 ```
 :PinponPanpon さいたま市
 
@@ -36,3 +38,9 @@ Version 0.0.3
 * 2012-08-15
   - Initial version.
 ```
+
+## Todo
+
+* add all prefectures.
+* color highlight.
+* add sound :)
