@@ -11,6 +11,7 @@ scriptencoding utf-8
 if exists('g:loaded_pinponpanpon_vim')
   finish
 endif
+let g:loaded_pinponpanpon_vim = 1
 
 let s:json = {}
 let s:file = expand('<sfile>:h').'/area.json'
