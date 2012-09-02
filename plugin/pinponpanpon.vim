@@ -5,7 +5,7 @@
 " WebPage:     http://github.com/grauwoelfchen/pinponpanpon-vim
 " Source:      http://www.jma.go.jp/jp/warn/
 " License:     BSD
-" Version:     0.0.3
+" Version:     0.0.4
 
 scriptencoding utf-8
 if exists('g:loaded_pinponpanpon_vim')

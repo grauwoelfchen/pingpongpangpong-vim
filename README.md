@@ -25,9 +25,12 @@ g:pinponpanpon_area_name = 'さいたま市'
 
 ## Changelog
 
-Version 0.0.3
+Version 0.0.4
 
 ```
+* 2012-09-02
+  - Added missing area.
+  - Refactored code.
 * 2012-08-29
   - Improved window and buffer handling.
   - Added indicator message (fetching/parsing).
