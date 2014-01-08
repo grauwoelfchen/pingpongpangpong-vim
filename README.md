@@ -23,6 +23,16 @@ g:pingpongpangpong_area_name = 'さいたま市'
 
 * [Japan Meteorological Agency](http://www.jma.go.jp/jp/warn/)
 
+## Output
+
+```
+平成２６年　１月　７日１９時５３分　熊谷地方気象台発表
+埼玉県の注意警戒事項
+　注意報を解除します。
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+さいたま市　　　［解除］乾燥注意報　
+```
+
 ## Changelog
 
 Version 0.0.5
