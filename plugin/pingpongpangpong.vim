@@ -1,17 +1,17 @@
-" File:        pinponpanpon-vim
+" File:        pingpongpangpong-vim
 " Description: Vim plugin for checking weather warning announce from jma.go.jp
-" Author:      Yasuhiro Asaka <y.grauwoelfchen@gmail.com>
-" Last Change: 2012 Sep 02
-" WebPage:     http://github.com/grauwoelfchen/pinponpanpon-vim
+" Author:      Yasuhiro Asaka <grauwoelfchen@gmail.com>
+" Last Change: 2014 Jan 09
+" WebPage:     http://github.com/grauwoelfchen/pingpongpangpong-vim
 " Source:      http://www.jma.go.jp/jp/warn/
 " License:     BSD
-" Version:     0.0.4
+" Version:     0.0.5
 
 scriptencoding utf-8
-if exists('g:loaded_pinponpanpon_vim')
+if exists('g:loaded_pingpongpangpong_vim')
   finish
 endif
-let g:loaded_pinponpanpon_vim = 1
+let g:loaded_pingpongpangpong_vim = 1
 
 let s:json = {}
 let s:path = expand('<sfile>:h').'/area.json'
@@ -51,13 +51,13 @@ endfunction
 
 function! s:bufopen_or_focus()
   " use same bufwinnr C-w
-  let winnr = bufwinnr(bufnr('^PinponPanpon$'))
+  let winnr = bufwinnr(bufnr('^pingpongpangpong$'))
   if winnr != -1
     if winnr != bufwinnr('%')
       execute winnr.'wincmd w'
     endif
   else
-    execute 'silent noautocmd botright split PinponPanpon'
+    execute 'silent noautocmd botright split pingpongpangpong'
   endif
 endfunction
 
@@ -69,8 +69,8 @@ function! s:show(info)
   setlocal nomodifiable
 endfunction
 
-function! s:PinponPanpon(...)
-  let area = a:0 > 0 ? a:1 : exists('g:pinponpanpon_area_name') ? g:pinponpanpon_area_name : ''
+function! s:pingpongpangpong(...)
+  let area = a:0 > 0 ? a:1 : exists('g:pingpongpangpong_area_name') ? g:pingpongpangpong_area_name : ''
   let code = s:to_code(area)
   if !(empty(area) || empty(code))
     call s:draw('fetching data...')
@@ -101,4 +101,4 @@ function! s:PinponPanpon(...)
   call s:draw('')
 endfunction
 
-command! -nargs=? PinponPanpon call <SID>PinponPanpon(<f-args>)
+command! -nargs=? PingPongPangPong call <SID>pingpongpangpong(<f-args>)

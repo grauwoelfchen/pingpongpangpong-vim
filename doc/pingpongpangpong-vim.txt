@@ -1,0 +1,76 @@
+*pingpongpangpong-vim.txt* Check tool for the japanese weather warning announce.
+
+Version: 0.0.5
+Author:  grauwoelfchen <grauwoelfchen@gmail.com>
+License: BSD
+
+==============================================================================
+CONTENTS                                             *pingpongpangpong-contents*
+
+Introduction ... |pingpongpangpong-introduction|
+Interface ...... |pingpongpangpong-interface|
+  Commands .....  |pingpongpangpong-commands|
+  Variables ....  |pingpongpangpong-functions|
+Changelog ...... |pingpongpangpong-changelog|
+
+==============================================================================
+INTRODUCTION                                     *pingpongpangpong-introduction*
+
+*pingpongpangpong-vim* is a Vim plugin to check the japanese weather warning
+Announce by area. "pingpongpangpong" is onomatopoeia of chime in japanese.
+
+Requirements:
+- webapi.vim
+- multibyte support of vim
+
+Latest version:
+http://github.com/grauwoelfchen/pingpongpangpong-vim
+
+==============================================================================
+INTERFACE                                           *pingpongpangpong-interface*
+
+------------------------------------------------------------------------------
+COMMANDS                                             *pingpongpangpong-commands*
+
+:pingpongpangpong [area]                                     *:pingpongpangpong*
+        This command shows you contents of Weather warning announce in
+        japanese. If g:pingpongpangpong_area_name is defined, then arguments
+        area is unneccessary.
+>
+        :pingpongpangpong さいたま市
+<
+        Contents comes from website of Japan Meteorological Agency
+        (http://www.jma.go.jp/jp/warn/).
+
+------------------------------------------------------------------------------
+VARIABLES                                           *pingpongpangpong-variables*
+
+g:pingpongpangpong_area_name
+        You can set your primary area name in Japanese. (ex. "さいたま市")
+        This is optional.
+
+==============================================================================
+CHANGELOG                                           *pingpongpangpong-changelog*
+
+2014-01-09
+- Rename to pingpongpangpong.
+
+2012-09-02
+- Added missing area.
+- Refactored code.
+
+2012-08-29
+- Improved window and buffer handling.
+- Added indicator message (fetching/parsing).
+
+2012-08-25
+- Solved parse error caused by broken table.
+
+2012-08-24
+- Updated doc text.
+
+2012-08-15
+- Initial version.
+
+==============================================================================
+vim:tw=78:sw=4:ts=8:ft=help:norl:

@@ -1,8 +1,8 @@
-# pinponpanpon-vim
+# pingpongpangpong-vim
 
 Let's check japanese weather warning Announce in Vim.
 
-pinponpanpon ♪
+ping pong pang pong ♪
 
 ## Require
 
@@ -10,14 +10,14 @@ pinponpanpon ♪
 
 ## Usage
 
-see `doc/pinponpanpon-vim.txt`
+see `doc/pingpongpangpong-vim.txt`
 
 ```
-:PinponPanpon さいたま市
+:PingPongPangPong さいたま市
 
 or set in .vimrc
 
-g:pinponpanpon_area_name = 'さいたま市'
+g:pingpongpangpong_area_name = 'さいたま市'
 ```
 ## Source
 
@@ -25,9 +25,11 @@ g:pinponpanpon_area_name = 'さいたま市'
 
 ## Changelog
 
-Version 0.0.4
+Version 0.0.5
 
 ```
+* 2014-01-09
+  - Rename to pingpongpangpong.
 * 2012-09-02
   - Added missing area.
   - Refactored code.
