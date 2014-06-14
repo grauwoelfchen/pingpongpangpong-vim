@@ -36,12 +36,13 @@ endfunction
 function! s:fetch(file)
   let base_url = 'http://www.jma.go.jp/jp/warn/'
   let response = webapi#http#get(base_url.a:file)
-  if a:file =~ '_table.html'
-    " jma.go.jp has broken table ;(
-    let html = substitute(response.content, "</tr></tr>", "</tr>", 'g')
-  else
-    let html = response.content
-  endif
+  let html = response.content
+  " response has strange tags
+  let html = substitute(html, '<head\_.*</head>', '', 'g')
+  let html = substitute(html, '\n\n', '^M', 'g')
+  let html = substitute(html, '</tr></tr>', '</tr>', 'g')
+  let html = substitute(html, 'table><ul>', 'table>', 'g')
+  let html = substitute(html, '</ul></table>', '<table>', 'g')
   return webapi#html#parse(iconv(html, 'utf-8', &encoding))
 endfunction
 
