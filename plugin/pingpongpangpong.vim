@@ -1,11 +1,11 @@
 " File:        pingpongpangpong-vim
 " Description: Vim plugin for checking weather warning announce from jma.go.jp
 " Author:      Yasuhiro Asaka <grauwoelfchen@gmail.com>
-" Last Change: 2014 Jan 09
+" Last Change: 2014 Jun 14
 " WebPage:     http://github.com/grauwoelfchen/pingpongpangpong-vim
 " Source:      http://www.jma.go.jp/jp/warn/
 " License:     BSD
-" Version:     0.0.5
+" Version:     0.0.6
 
 scriptencoding utf-8
 if exists('g:loaded_pingpongpangpong_vim')

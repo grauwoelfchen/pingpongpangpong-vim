@@ -1,6 +1,6 @@
 *pingpongpangpong-vim.txt* Check tool for the japanese weather warning announce.
 
-Version: 0.0.5
+Version: 0.0.6
 Author:  grauwoelfchen <grauwoelfchen@gmail.com>
 License: BSD
 
@@ -51,6 +51,9 @@ g:pingpongpangpong_area_name
 
 ==============================================================================
 CHANGELOG                                           *pingpongpangpong-changelog*
+
+2014-06-14
+- Fix broken HTML tags issue.
 
 2014-01-09
 - Rename to pingpongpangpong.

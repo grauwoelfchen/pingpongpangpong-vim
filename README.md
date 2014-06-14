@@ -38,6 +38,8 @@ g:pingpongpangpong_area_name = 'さいたま市'
 Version 0.0.5
 
 ```
+* 2014-06-14
+  - Fix broken HTML tags issue.
 * 2014-01-09
   - Rename to pingpongpangpong.
 * 2012-09-02
